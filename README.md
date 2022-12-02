@@ -13,5 +13,5 @@ Day 1:
 Day 2:
 - Terrible!
 - Go to [https://adventofcode.com/2022/day/2/input](https://adventofcode.com/2022/day/2/input)
-- Part 1 run ```eval(document.body.textContent.trim().split('\n').map(x=>(b='charCodeAt',a=x[2][b](0)-88,a+1+(a+(4-(x[0][b](0)-65)))%3*3)).join('+'))```
-- Part 2 run ```eval(document.body.textContent.trim().split('\n').map(x=>(b='charCodeAt',a=x[2][b](0)-88,a*3+1+(a+x[0][b](0)-63)%3)).join('+'))```
+- Part 1 run ```eval(document.body.textContent.split('\n').map(x=>x?(a='XYZ'.indexOf(x[2]),a+1+(a+4-'ABC'.indexOf(x[0]))%3*3):0).join('+'))```
+- Part 2 run ```eval(document.body.textContent.split('\n').map(x=>x?(a='XYZ'.indexOf(x[2]),a*3+1+(a+'ABC'.indexOf(x[0])+2)%3):0).join('+'))```
