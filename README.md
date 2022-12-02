@@ -7,7 +7,8 @@ Objective: Solve with the shortest js code possible
 Day 1:
 - Ugh!
 - Go to [https://adventofcode.com/2022/day/1/input](https://adventofcode.com/2022/day/1/input)
-- Run ```eval(`Math.max(${document.body.textContent.replace(/\n\n/g,',').replace(/\n/g,'+')}0)`)``` on the console
+- Part 1 run ```eval(`Math.max(${document.body.textContent.replace(/\n\n/g,',').replace(/\n/g,'+')}0)`)```
+- Part 2 run ```eval(eval(`[${document.body.textContent.replace(/\n\n/g,',').replace(/\n/g,'+')}0]`).sort((a,b)=>b-a).slice(0,3).join('+'))```
 
 Day 2:
 - Terrible!
