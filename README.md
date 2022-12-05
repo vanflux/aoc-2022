@@ -31,4 +31,4 @@ Day 4:
 Day 5:
 - ???
 - Go to [https://adventofcode.com/2022/day/5/input](https://adventofcode.com/2022/day/5/input)
-- [261 chars] Part 1 run ```a=1,f=[],document.body.textContent.split(/\n/).map(x=>(x[1]=='1'?a=0:[...x].map((c,i)=>(c!=' '&0==(i-1)%4&&(b=(i-1)/4,f[b]=[c,...f[b]||[]]))),x[0]=='m'&&(z=x.match(/\d+/g),()=>{for(i=0;i++<z[0]-0;)f[z[2]-1].push(f[z[1]-1].pop())})())),f.map(s=>s.pop()).join('')```
+- [263 chars] Part 1 run ```a=0,f=[],document.body.textContent.split(/\n/).map(x=>(x[1]=='1'|a?a=1:[...x].map((c,i)=>(c!=' '&0==(i-1)%4&&(b=(i-1)/4,f[b]=[c,...f[b]||[]]))),x[0]=='m'&&(z=x.match(/\d+/g),()=>{for(i=0;i++<z[0]-0;)f[z[2]-1].push(f[z[1]-1].pop())})())),f.map(s=>s.pop()).join('')```
