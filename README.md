@@ -25,5 +25,5 @@ Day 3:
 Day 4:
 - UaUaUa!
 - Go to [https://adventofcode.com/2022/day/4/input](https://adventofcode.com/2022/day/4/input)
-- [141 chars] Part 1 run ```document.body.textContent.trim().split('\n').map(l=>l.split(/\D/).map(Number)).reduce((a,[h,j,k,l])=>a+((h<=k&k<=l&l<=j)|(k<=h&h<=j&j<=l)),0)```
+- [120 chars] Part 1 run ```eval(document.body.textContent.replace(/(\w+)-(\w+),(\w+)-(\w+)\n/g,'($1<=$3&$3<=$4&$4<=$2|$3<=$1&$1<=$2&$2<=$4)+')+'0')```
 - [175 chars] Part 2 run ```document.body.textContent.trim().split('\n').map(l=>l.split(/\D/).map(Number)).reduce((a,[h,j,k,l])=>a+((h<=k&j<=l&j>=k)|(k<=h&h<=l&l<=j)|(h<=k&k<=l&l<=j)|(k<=h&h<=j&j<=l)),0)```
