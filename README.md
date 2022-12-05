@@ -27,3 +27,8 @@ Day 4:
 - Go to [https://adventofcode.com/2022/day/4/input](https://adventofcode.com/2022/day/4/input)
 - [120 chars] Part 1 run ```eval(document.body.textContent.replace(/(\w+)-(\w+),(\w+)-(\w+)\n/g,'($1<=$3&$3<=$4&$4<=$2|$3<=$1&$1<=$2&$2<=$4)+')+'0')```
 - [162 chars] Part 2 run ```eval(document.body.textContent.replace(/(\w+)-(\w+),(\w+)-(\w+)\n/g,'($1<=$3&$2<=$4&$2>=$3|$3<=$1&$1<=$4&$4<=$2|$1<=$3&$3<=$4&$4<=$2|$3<=$1&$1<=$2&$2<=$4)+')+'0')```
+
+Day 5:
+- ???
+- Go to [https://adventofcode.com/2022/day/5/input](https://adventofcode.com/2022/day/5/input)
+- [261 chars] Part 1 run ```a=1,f=[],document.body.textContent.split(/\n/).map(x=>(x[1]=='1'?a=0:[...x].map((c,i)=>(c!=' '&0==(i-1)%4&&(b=(i-1)/4,f[b]=[c,...f[b]||[]]))),x[0]=='m'&&(z=x.match(/\d+/g),()=>{for(i=0;i++<z[0]-0;)f[z[2]-1].push(f[z[1]-1].pop())})())),f.map(s=>s.pop()).join('')```
