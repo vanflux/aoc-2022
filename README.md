@@ -26,3 +26,4 @@ Day 4:
 - UaUaUa!
 - Go to [https://adventofcode.com/2022/day/4/input](https://adventofcode.com/2022/day/4/input)
 - Part 1 run ```document.body.textContent.trim().split('\n').map(l=>l.split(/\D/).map(Number)).reduce((a,[h,j,k,l])=>a+((h<=k&k<=l&l<=j)|(k<=h&h<=j&j<=l)),0)```
+- Part 2 run ```document.body.textContent.trim().split('\n').map(l=>l.split(/\D/).map(Number)).reduce((a,[h,j,k,l])=>a+((h<=k&j<=l&j>=k)|(k<=h&h<=l&l<=j)|(h<=k&k<=l&l<=j)|(k<=h&h<=j&j<=l)),0)```
