@@ -21,3 +21,8 @@ Day 3:
 - Go to [https://adventofcode.com/2022/day/3/input](https://adventofcode.com/2022/day/3/input)
 - Part 1 run ```document.body.textContent.trim().split('\n').map(m=>(d=m.length,l=[...m.slice(0,d/2)].find(c=>[...m.slice(d/2)].some(_c=>c==_c)),f='charCodeAt',l==l.toUpperCase()?l[f](0)-38:(l[f](0)-96))).reduce((a,b)=>a+b)```
 - Part 2 run ```[...document.body.textContent.matchAll(/(.*)\n(.*)\n(.*)\n/g)].map(z=>(f='charCodeAt',l=[...z[1]].find(c=>[...z[2]].some(v=>[...z[3]].some(b=>c==v&v==b))),l==l.toUpperCase()?l[f](0)-38:(l[f](0)-96))).reduce((a,b)=>a+b)```
+
+Day 4:
+- UaUaUa!
+- Go to [https://adventofcode.com/2022/day/4/input](https://adventofcode.com/2022/day/4/input)
+- Part 1 run ```document.body.textContent.trim().split('\n').map(l=>l.split(/\D/).map(Number)).reduce((a,[h,j,k,l])=>a+((h<=k&k<=l&l<=j)|(k<=h&h<=j&j<=l)),0)```
