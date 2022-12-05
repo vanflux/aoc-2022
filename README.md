@@ -8,7 +8,7 @@ Day 1:
 - Ugh!
 - Go to [https://adventofcode.com/2022/day/1/input](https://adventofcode.com/2022/day/1/input)
 - [87 chars] Part 1 run ```eval(`Math.max(${document.body.textContent.replace(/\n\n/g,',').replace(/\n/g,'+')}0)`)```
-- [123 chars] Part 2 run ```eval(eval(`[${document.body.textContent.replace(/\n\n/g,',').replace(/\n/g,'+')}0]`).sort((a,b)=>b-a).slice(0,3).join('+'))```
+- [122 chars] Part 2 run ```eval(eval(`[${document.body.textContent.replace(/\n\n/g,',').replace(/\n/g,'+')}0]`).sort((a,b)=>a-b).slice(-3).join('+'))```
 
 Day 2 (interesting the way that rock,paper,scissors was logically simplified, without ifs):
 - Terrible!
