@@ -33,3 +33,9 @@ Day 5:
 - Go to [https://adventofcode.com/2022/day/5/input](https://adventofcode.com/2022/day/5/input)
 - [263 chars] Part 1 run ```a=0,f=[],document.body.textContent.split(/\n/).map(x=>(x[1]=='1'|a?a=1:[...x].map((c,i)=>(c!=' '&0==(i-1)%4&&(b=(i-1)/4,f[b]=[c,...f[b]||[]]))),x[0]=='m'&&(z=x.match(/\d+/g),()=>{for(i=0;i++<z[0]-0;)f[z[2]-1].push(f[z[1]-1].pop())})())),f.map(s=>s.pop()).join('')```
 - [246 chars] Part 2 run ```a=0,f=[],document.body.textContent.split(/\n/).map(x=>(x[1]=='1'|a?a=1:[...x].map((c,i)=>(c!=' '&0==(i-1)%4&&(b=(i-1)/4,f[b]=[c,...f[b]||[]]))),x[0]=='m'&&(z=x.match(/\d+/g),f[z[2]-1].push(...f[z[1]-1].splice(-z[0]))))),f.map(s=>s.pop()).join('')```
+
+Day 6:
+- Hm
+- Go to [https://adventofcode.com/2022/day/6/input](https://adventofcode.com/2022/day/6/input)
+- [111 chars] Part 1 run ```a=document.body.textContent,4+[...a].findIndex((_,i)=>(b=[...a.slice(i,i+4)],b.sort().every((a,i)=>a!=b[i-1])))```
+- [113 chars] Part 2 run ```a=document.body.textContent,14+[...a].findIndex((_,i)=>(b=[...a.slice(i,i+14)],b.sort().every((a,i)=>a!=b[i-1])))```
